@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "cors": "^2.8.6",
     "uuid": "^13.0.0",
     "vue": "beta",
     "vue-router": "^5.0.3"
