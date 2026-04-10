@@ -3,12 +3,12 @@ import { ref, onMounted } from 'vue'
 
 const products = ref([])
 
-// 👇 URL de tu backend (Railway)
+
 const url = "https://inventory-back-production-45d2.up.railway.app"
 
 onMounted(async () => {
   try {
-    const res = await fetch(`${url}/products`)
+    const res = await fetch(`${url}/api/products`)
     const data = await res.json()
     products.value = data
   } catch (error) {
